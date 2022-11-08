@@ -1,91 +1,94 @@
-<div class="row">
-  <div class="col-sm-12 col-lg-12 p-0">
-    <div class="card card__styling">
-      <div class="card-header custom__card__body__styling">
-        <h2 class="card-title mb-0">
-          Add User
-        </h2>
-      </div>
-      <hr style="border-top: 0px !important;">
-      <form [formGroup]="_fs._form"  (ngSubmit)=" submit()" autocomplete="off">
-        <div class="row card-body py-0">
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>First Name </mat-label>
-                <input matInput placeholder="First Name" formControlName="firstName">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>Last Name</mat-label>
-                <input matInput placeholder="Last Name" formControlName="lastName">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>Age</mat-label>
-                <input matInput placeholder="Age" formControlName="age">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>Gender</mat-label>
-                <input matInput placeholder="Gender" formControlName="gender">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>Email</mat-label>
-                <input matInput placeholder="Email" formControlName="email">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>Password</mat-label>
-                <input matInput placeholder="Password" formControlName="password">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>Phone Number </mat-label>
-                <input matInput placeholder="Phone Number" formControlName="phone">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>User name</mat-label>
-                <input matInput placeholder="User name" formControlName="username">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>Height</mat-label>
-                <input matInput placeholder="Height" formControlName="height">
-              </mat-form-field>
-          </div>
-
-          <div class="col-sm-4 col-md-4 p-2 my-1">
-              <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
-                <mat-label>Weight</mat-label>
-                <input matInput placeholder="Weight" formControlName="weight">
-              </mat-form-field>
-          </div>
-
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <button type="submit" class="btn btn-success">Success</button>
-          </div>
-
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-lg-12 pt-4 pb-4">
+      <div class="card card__styling">
+        <div class="card-header custom__card__body__styling">
+          <h2 class="card-title mb-0">
+            Add User
+          </h2>
         </div>
-      </form>
+        <hr style="border-top: 0px !important;">
+        <form [formGroup]="_fs._form"  (ngSubmit)=" submit()" autocomplete="off">
+          <div class="row card-body py-0">
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>First Name </mat-label>
+                  <input matInput placeholder="First Name" formControlName="firstName">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput placeholder="Last Name" formControlName="lastName">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>Age</mat-label>
+                  <input matInput placeholder="Age" formControlName="age" type="number">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>Gender</mat-label>
+                  <input matInput placeholder="Gender" formControlName="gender">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="Email" formControlName="email"  type="email">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input matInput placeholder="Password" formControlName="password" type="password">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>Phone Number </mat-label>
+                  <input matInput placeholder="Phone Number" formControlName="phone" type="cell">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>User name</mat-label>
+                  <input matInput placeholder="User name" formControlName="username">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>Height</mat-label>
+                  <input matInput placeholder="Height" formControlName="height">
+                </mat-form-field>
+            </div>
+
+            <div class="col-sm-4 col-md-4 p-2 my-1">
+                <mat-form-field class="example-full-width col-md-12 my-1" appearance="outline">
+                  <mat-label>Weight</mat-label>
+                  <input matInput placeholder="Weight" formControlName="weight">
+                </mat-form-field>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end pb-2">
+                <button type="submit" class="btn btn-success">Success</button>
+                <button (click)="_switch()" class="btn btn-danger">Cancel</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
